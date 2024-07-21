@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario da freecodecamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">freeCodeCamp form</h1>
+    <p id="description">Thank you for filling out!</p>
+  </header>
+  <form id="survey-form">
+      <div class="box">
+        <label id="name-label" >Name</label><br>
+        <input id="name" type="text" placeholder="Name..." required>
+      </div>
+      <div class="box">
+        <label id="email-label" >Email</label><br>
+        <input id="email" type="email" placeholder="Email..." required>
+      </div>
+      <div class="box">
+        <label id="number-label">Number</label><br>
+        <input id="number" type="number" min="10" max="99" placeholder="Number...">
+      </div>
+      <div class="box">
+        <label id="exp-label">Do you have experience?</label><br>
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="box">
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <div class="container-radioBox">
+            <input type="radio" name="radio" value="definitely">Definitely<br>
+            <input type="radio" name="radio" value="maybe">Maybe<br>
+            <input type="radio" name="radio" value="notsure">Not sure<br>
+        </div>
+      </div>
+      <div class="box">
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <div class="container-checkbox">
+            <input type="checkbox" name="future" value="Frontend">Front-End Projects<br>
+            <input type="checkbox" name="future" value="Backend">Back-End Projects<br>
+            <input type="checkbox" name="future" value="Datavis">Data Visualization<br>
+            <input type="checkbox" name="future" value="Challenges">Challenges<br>
+            <input type="checkbox" name="future" value="Opensourecom">Open Source Community<br>
+            <input type="checkbox" name="future" value="Gitterhelprooms">Gitter Help Rooms<br>
+            <input type="checkbox" name="future" value="Videos">Videos<br>
+            <input type="checkbox" name="future" value="Citymeetups">City Meetups<br>
+            <input type="checkbox" name="future" value="Wiki">Wiki<br>
+            <input type="checkbox" name="future" value="Forum">Forum<br>
+            <input type="checkbox" name="future" value="Addtlcourses">Additional Courses<br>
+        </div>
+      </div>
+      <div class="box">
+        <textarea id="comments" rows="8" cols="40" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="box">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+
+  </form>
+</body>
